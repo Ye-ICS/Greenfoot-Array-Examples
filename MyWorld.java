@@ -9,6 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     Square[] squares;
+    AnimationWithArrays animatedCharacter;
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -29,6 +31,11 @@ public class MyWorld extends World
         showText("Press ENTER to add squares.", 300, 20);
         showText("Click anywhere to move squares.", 300, 50);
         showText("Press DELETE to remove squares.", 300, 80);
+        
+        
+        // Add animated character.
+        animatedCharacter = new AnimationWithArrays();
+        addObject(animatedCharacter, 550, 350);
     }
     
     
